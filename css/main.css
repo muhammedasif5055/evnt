@@ -89,7 +89,7 @@ section {
   font-weight: 500px;
   -webkit-transform: 0.6s;
           transform: 0.6s;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .header ul li a::after {
@@ -1603,6 +1603,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1631,6 +1632,102 @@ section {
   padding-bottom: 10px;
   border-bottom: 1px solid #d6d6d4;
   line-height: 48px;
+}
+
+.latter .box-contant .letter .contant span input {
+  border: none;
+  background: none;
+  color: #979595;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #d6d6d4;
+  font-size: 1.05rem;
+  text-align: center;
+  width: 12rem;
+  padding-bottom: 0.4rem;
+}
+
+.latter .box-contant .letter .contant span input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.latter .box-contant .letter .contant span input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.latter .box-contant .letter .contant span input::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.latter .box-contant .letter .contant span input::placeholder {
+  text-transform: uppercase;
+}
+
+.latter .box-contant .letter .contant span .num {
+  width: 6rem;
+}
+
+.latter .box-contant .letter .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.latter .box-contant .letter .btn button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.latter .box-contant .letter .btn button::before, .latter .box-contant .letter .btn button::after {
+  margin-top: 1rem;
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.latter .box-contant .letter .btn button::before {
+  width: 100%;
+  left: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.latter .box-contant .letter .btn button:hover::before {
+  width: 0;
+}
+
+.latter .box-contant .letter .btn button:hover:after {
+  width: 100%;
+  left: 0;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .contact {
@@ -2193,7 +2290,7 @@ section {
   color: #fff;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .wedding-bg-image1 {
@@ -2322,7 +2419,7 @@ section {
   color: #fff;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .wedding-bg-image2 {
@@ -2442,7 +2539,7 @@ section {
   color: #fff;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .wedding-bg-image3 {
@@ -2562,7 +2659,7 @@ section {
   color: #fff;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .wedding-bg-image4 {

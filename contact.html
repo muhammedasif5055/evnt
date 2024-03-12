@@ -16,6 +16,19 @@
         <link rel="stylesheet" href="css/main.css">
          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <title>VOGUE</title>
+        <style>
+            /* Chrome, Safari, Edge, Opera */
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            
+            /* Firefox */
+            input[type=number] {
+              -moz-appearance: textfield;
+            }
+            </style>
     </head>
 <body>
 
@@ -53,10 +66,22 @@
         </div>
         <div class="letter">
             <p class="hed">Dear Scarlet,</p>
-            <p class="contant"> <span> My name is  and I am organising a  on  for  guests with a total budget of  We are looking for a venue in or around
-                and we will require for the event. The event planners at Scarlet can contact me by email on  and by phone on Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Nihil, tempore! </span>
+            <form action="">
+            <p class="contant"> <span> My name is <input type="text" placeholder="jhone" required>   and I am organising a <input type="text" placeholder="Birthday party" required> on
+
+                <input type="text" placeholder="10/08/2022" onfocus="(this.type='date')"   onblur="(this.type='text')" required>  for <input class="num" type="number" placeholder="100" required> 
+
+                 guests with a total budget of <input class="num" type="number" placeholder="15k" required> We are looking for a venue in or around
+
+                <input type="text" placeholder="kochin" required> and we will require <input type="text" placeholder="few ideas" required> for the event. The event planners at Scarlet can contact 
+
+                me by email on <input type="email" placeholder="jhone@me.com" required>  and by phone on <input type="number" placeholder="0987654321" required>  </span>
+                
               </p>
+              <div class="btn">
+              <button type="submit">Submi</button>
+              </div>
+              </form>
         </div>
         </div>
     </section>
@@ -148,8 +173,8 @@
             </div>
             </div>
         </div>
-    </section> 
-    <!-- <div class="credit">Design & Developed by <a href="https://brandingsparrow.com/">brandingsparrow</a>.all rights reseved . <span>&copy;VOGUE</span></div> -->
+    </section>
+    
 
 <!-- footer sction ends -->
 

@@ -33,7 +33,7 @@ body {
 section {
     padding: 3rem 9%;
 }
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@ section {
         li {
             position: relative;
             list-style: none;
-           
+
             a {
                 position: relative;
                 margin: 0 15px;
@@ -74,7 +74,7 @@ section {
                 letter-spacing: 2px;
                 font-weight: 500px;
                 transform: 0.6s;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 &::after {
                     background: none repeat scroll 0 0 transparent;
                     bottom: 0;
@@ -174,7 +174,7 @@ section {
     padding: 5px 100px;
     background: #000;
 }
-.oth-page{
+.oth-page {
     padding: 5px 100px;
     background: #000;
 }
@@ -570,7 +570,7 @@ section {
         a {
             margin-top: 2.3rem;
             color: #fff;
-            text-transform:capitalize;
+            text-transform: capitalize;
             text-decoration: none;
             font-size: 1.3rem;
             display: inline-block;
@@ -860,7 +860,7 @@ section {
 
         a {
             color: #fff;
-            text-transform:capitalize;
+            text-transform: capitalize;
             text-decoration: none;
             font-size: 1.3rem;
             display: inline-block;
@@ -1411,19 +1411,18 @@ section {
 
         .letter {
             display: flex;
+            position: relative;
             flex-direction: column;
             max-width: 40%;
             justify-content: center;
             margin-top: 5rem;
             text-align: left;
-
             .hed {
                 color: #fff;
                 text-align: left;
             }
             .contant {
                 margin-top: 2rem;
-
                 color: #fff;
                 line-height: 3;
                 letter-spacing: 1px;
@@ -1432,12 +1431,84 @@ section {
                     padding-bottom: 10px;
                     border-bottom: 1px solid #d6d6d4;
                     line-height: 48px;
+                    input {
+                        border: none;
+                        background: none;
+                        color: rgb(151, 149, 149);
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        letter-spacing: 1px;
+                        border-bottom: 4px solid #d6d6d4;
+                        font-size: 1.05rem;
+                        text-align: center;
+                        width: 12rem;
+                        padding-bottom: 0.4rem;
+                        &::placeholder {
+                            text-transform: uppercase;
+                        }
+                       
+                    }
+                    .num {
+                        width: 6rem;
+                    }
+                }
+            }
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                button {
+                    border: none;
+                    background: transparent;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    cursor: pointer;
+                    text-transform: capitalize;
+                    text-decoration: none;
+
+                    display: inline-block;
+                    position: relative;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    line-height: 2;
+                    &::before,
+                    &::after {
+                        margin-top: 1rem;
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        left: 50%;
+                        position: absolute;
+                        background: #fff;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+
+                    &::before {
+                        width: 100%;
+                        left: 0;
+                        transition-delay: 0.2s;
+                    }
+
+                    &:hover::before {
+                        width: 0;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                        left: 0;
+                        transition-delay: 0.5s;
+                    }
                 }
             }
         }
     }
 }
- .contact {
+.contact {
     text-align: center;
 
     .contacthead {
@@ -1471,7 +1542,7 @@ section {
 
             justify-content: center;
             align-items: center;
-            text-transform:capitalize;
+            text-transform: capitalize;
 
             li {
                 position: relative;
@@ -1484,23 +1555,22 @@ section {
         }
     }
 
-    .email{
+    .email {
         margin-top: -4rem;
 
-        h3{
+        h3 {
             font-size: 1.5rem;
             font-weight: 400;
             text-transform: capitalize;
         }
-        p{
+        p {
             margin-top: 1rem;
-            font-size: 1rem ;
+            font-size: 1rem;
         }
 
-        &.emaildown{
+        &.emaildown {
             margin-top: 3rem;
         }
-
     }
 }
 
@@ -1586,7 +1656,7 @@ section {
     }
 }
 
-.abot-party-revrse{
+.abot-party-revrse {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1609,7 +1679,7 @@ section {
 
     .contant {
         margin-top: 10rem;
-       text-align: left;
+        text-align: left;
         margin-right: 2rem;
         h3 {
             color: #000;
@@ -1625,8 +1695,6 @@ section {
             margin-top: 1rem;
             font-size: 1.2rem;
             padding-right: 11rem;
-
-        
         }
         .get {
             margin-top: 5rem;
@@ -1681,28 +1749,29 @@ section {
     height: 40rem;
 }
 //entertinment
-.wedding-headr{
+.wedding-headr {
     display: flex;
     padding: 3rem 9%;
     margin-top: 10rem;
-    .imagge{
+    .imagge {
         height: 100%;
         overflow: hidden;
         width: 100%;
         padding: 1rem;
-img{
-    height: 100%;
-width: 100%;
-object-fit: cover;
-}
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 
-.banner-des{
+.banner-des {
     margin: 0 auto;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../img/gallary/taj.jpg) no-repeat;
- 
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url(../img/gallary/taj.jpg) no-repeat;
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1778,30 +1847,27 @@ object-fit: cover;
         }
     }
 }
-.destinatin-head{
+.destinatin-head {
     margin-top: 8rem;
     font-size: 2rem;
     font-weight: 400;
     font-style: italic;
 }
-.contant-destintion{
- 
+.contant-destintion {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-left: 30rem;
-    ul{
-      
+    ul {
         font-size: 2rem;
         line-height: 3;
         margin: 5rem 9rem;
 
-        li{
+        li {
             margin-left: -32rem;
             list-style: none;
             text-align: left;
             a {
-               
                 position: relative;
                 margin: 0 15px;
                 text-decoration: none;
@@ -1809,7 +1875,7 @@ object-fit: cover;
                 letter-spacing: 2px;
                 font-weight: 500px;
                 transform: 0.6s;
-            
+
                 &::after {
                     background: none repeat scroll 0 0 transparent;
                     bottom: 0;
@@ -1830,11 +1896,12 @@ object-fit: cover;
         }
     }
 }
-.banner-desti{
+.banner-desti {
     margin: 0 auto;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../img/gallary/london.jpg) no-repeat;
- 
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url(../img/gallary/london.jpg) no-repeat;
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1878,9 +1945,9 @@ object-fit: cover;
             letter-spacing: 1px;
             font-weight: 500;
             line-height: 2;
-            background-color: rgba($color: #fff, $alpha: .61);
+            background-color: rgba($color: #fff, $alpha: 0.61);
             border-radius: 5px;
-           
+
             margin-left: 2rem;
             text-align: left;
             &::before,
@@ -1893,7 +1960,7 @@ object-fit: cover;
                 height: 2px;
                 left: 50%;
                 position: absolute;
-                background-color: rgba($color: #fff, $alpha: .61);
+                background-color: rgba($color: #fff, $alpha: 0.61);
                 transition: width 0.3s ease 0s, left 0.3s ease 0s;
                 width: 0;
                 border-radius: 5px;
@@ -1913,23 +1980,20 @@ object-fit: cover;
                 width: 100%;
                 left: 0;
                 transition-delay: 0.5s;
-                
             }
             &:hover {
-                background-color: rgba($color: #111, $alpha: .61);
-               i{
-              
+                background-color: rgba($color: #111, $alpha: 0.61);
+                i {
                     padding-left: 2rem;
-                
-               }
+                }
             }
-            i{
+            i {
                 font-size: 1rem;
                 color: #fff;
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
-                margin-left: .5rem;
-                }
+                margin-left: 0.5rem;
+            }
         }
     }
 }
@@ -1938,8 +2002,8 @@ object-fit: cover;
     background-size: cover;
     height: 40rem;
 }
-.Entertainment{
-    h1{
+.Entertainment {
+    h1 {
         text-align: center;
         text-transform: capitalize;
         margin-top: 4rem;
@@ -1948,11 +2012,12 @@ object-fit: cover;
         letter-spacing: 3px;
     }
 }
-.banner-desti2{
+.banner-desti2 {
     margin: 0 auto;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../img/gallary/mumbi.jpg) no-repeat;
- 
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url(../img/gallary/mumbi.jpg) no-repeat;
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1996,9 +2061,9 @@ object-fit: cover;
             letter-spacing: 1px;
             font-weight: 500;
             line-height: 2;
-            background-color: rgba($color: #fff, $alpha: .61);
+            background-color: rgba($color: #fff, $alpha: 0.61);
             border-radius: 5px;
-           
+
             margin-left: 2rem;
             text-align: left;
             &::before,
@@ -2011,7 +2076,7 @@ object-fit: cover;
                 height: 2px;
                 left: 50%;
                 position: absolute;
-                background-color: rgba($color: #fff, $alpha: .61);
+                background-color: rgba($color: #fff, $alpha: 0.61);
                 transition: width 0.3s ease 0s, left 0.3s ease 0s;
                 width: 0;
                 border-radius: 5px;
@@ -2031,23 +2096,20 @@ object-fit: cover;
                 width: 100%;
                 left: 0;
                 transition-delay: 0.5s;
-                
             }
             &:hover {
-                background-color: rgba($color: #111, $alpha: .61);
-               i{
-              
+                background-color: rgba($color: #111, $alpha: 0.61);
+                i {
                     padding-left: 2rem;
-                
-               }
+                }
             }
-            i{
+            i {
                 font-size: 1rem;
                 color: #fff;
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
-                margin-left: .5rem;
-                }
+                margin-left: 0.5rem;
+            }
         }
     }
 }
@@ -2056,11 +2118,12 @@ object-fit: cover;
     background-size: cover;
     height: 40rem;
 }
-.banner-desti3{
+.banner-desti3 {
     margin: 0 auto;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(236, 51, 51, 0.61)), url(../img/gallary/karnadaka.jpg) no-repeat;
- 
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(236, 51, 51, 0.61)),
+        url(../img/gallary/karnadaka.jpg) no-repeat;
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -2104,9 +2167,9 @@ object-fit: cover;
             letter-spacing: 1px;
             font-weight: 500;
             line-height: 2;
-            background-color: rgba($color: #fff, $alpha: .61);
+            background-color: rgba($color: #fff, $alpha: 0.61);
             border-radius: 5px;
-           
+
             margin-left: 2rem;
             text-align: left;
             &::before,
@@ -2119,7 +2182,7 @@ object-fit: cover;
                 height: 2px;
                 left: 50%;
                 position: absolute;
-                background-color: rgba($color: #fff, $alpha: .61);
+                background-color: rgba($color: #fff, $alpha: 0.61);
                 transition: width 0.3s ease 0s, left 0.3s ease 0s;
                 width: 0;
                 border-radius: 5px;
@@ -2139,23 +2202,20 @@ object-fit: cover;
                 width: 100%;
                 left: 0;
                 transition-delay: 0.5s;
-                
             }
             &:hover {
-                background-color: rgba($color: #111, $alpha: .61);
-               i{
-              
+                background-color: rgba($color: #111, $alpha: 0.61);
+                i {
                     padding-left: 2rem;
-                
-               }
+                }
             }
-            i{
+            i {
                 font-size: 1rem;
                 color: #fff;
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
-                margin-left: .5rem;
-                }
+                margin-left: 0.5rem;
+            }
         }
     }
 }
@@ -2164,11 +2224,12 @@ object-fit: cover;
     background-size: cover;
     height: 40rem;
 }
-.banner-desti4{
+.banner-desti4 {
     margin: 0 auto;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(236, 51, 51, 0.61)), url(../img/gallary/kochi.jpg) no-repeat;
- 
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(236, 51, 51, 0.61)),
+        url(../img/gallary/kochi.jpg) no-repeat;
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -2212,9 +2273,9 @@ object-fit: cover;
             letter-spacing: 1px;
             font-weight: 500;
             line-height: 2;
-            background-color: rgba($color: #fff, $alpha: .61);
+            background-color: rgba($color: #fff, $alpha: 0.61);
             border-radius: 5px;
-           
+
             margin-left: 2rem;
             text-align: left;
             &::before,
@@ -2227,7 +2288,7 @@ object-fit: cover;
                 height: 2px;
                 left: 50%;
                 position: absolute;
-                background-color: rgba($color: #fff, $alpha: .61);
+                background-color: rgba($color: #fff, $alpha: 0.61);
                 transition: width 0.3s ease 0s, left 0.3s ease 0s;
                 width: 0;
                 border-radius: 5px;
@@ -2247,50 +2308,46 @@ object-fit: cover;
                 width: 100%;
                 left: 0;
                 transition-delay: 0.5s;
-                
             }
             &:hover {
-                background-color: rgba($color: #111, $alpha: .61);
-               i{
-              
+                background-color: rgba($color: #111, $alpha: 0.61);
+                i {
                     padding-left: 2rem;
-                
-               }
+                }
             }
-            i{
+            i {
                 font-size: 1rem;
                 color: #fff;
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
-                margin-left: .5rem;
-                }
+                margin-left: 0.5rem;
+            }
         }
     }
 }
 .wedding-bg-image4 {
-    background: url(../img/gallary/outdoor-wedding-venues-in-patna-to-celebrate-a-perfect-open-air-function.jpg) no-repeat;
+    background: url(../img/gallary/outdoor-wedding-venues-in-patna-to-celebrate-a-perfect-open-air-function.jpg)
+        no-repeat;
     background-size: cover;
     height: 40rem;
 }
-.dessti4-texti{
+.dessti4-texti {
     display: flex;
-   
-    .aboutas{
+
+    .aboutas {
         margin-top: 3rem;
         max-width: 50rem;
         margin-left: 17rem;
     }
 }
-@media (max-width: 1250px){
+@media (max-width: 1250px) {
     .header {
         background: #000;
-       ul{  
-        
-        li a{
-           font-size: 1.5rem;
-     
-        
-       }}
+        ul {
+            li a {
+                font-size: 1.5rem;
+            }
+        }
         #menu-icon {
             display: block;
         }
@@ -2315,10 +2372,9 @@ object-fit: cover;
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
             transition: 0.5s ease;
             animation: fadeIndow 1s ease forwards;
-          li{
-              margin-top: 3rem;
-          
-          }
+            li {
+                margin-top: 3rem;
+            }
             &.active {
                 clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
                 animation: fadeInUp 1s ease backwards;
@@ -2397,18 +2453,18 @@ object-fit: cover;
             flex-direction: column;
         }
     }
-    .abot-party-revrse{
+    .abot-party-revrse {
         flex-direction: column-reverse;
     }
-    .contant-destintion{
+    .contant-destintion {
         justify-content: center;
-         gap: 47%;
-         margin-left: 76%;
+        gap: 47%;
+        margin-left: 76%;
     }
-    .dessti4-texti{
+    .dessti4-texti {
         flex-direction: column;
-       
-        .aboutas{
+
+        .aboutas {
             margin-left: 0;
             max-width: 100rem;
         }
@@ -2416,8 +2472,6 @@ object-fit: cover;
 }
 
 @media (max-width: 768px) {
- 
-
     .evnts-sec .box-container .box figure.effect-lily {
         p {
             padding-right: 1rem;
@@ -2449,7 +2503,7 @@ object-fit: cover;
     .latter .box-contant .letter {
         max-width: 68%;
     }
-    .wedding-headr{
+    .wedding-headr {
         flex-direction: column;
     }
 }
@@ -2482,35 +2536,32 @@ object-fit: cover;
     .latter .box-contant .letter {
         max-width: 100%;
     }
-    .contant-destintion{
-      
-         margin-left: 104%;
+    .contant-destintion {
+        margin-left: 104%;
     }
 }
 @media (max-width: 450px) {
     html {
         font-size: 60%;
     }
-    .abot-party-revrse .contant{
-        h3{
+    .abot-party-revrse .contant {
+        h3 {
             font-size: 2rem;
         }
-        
-        p{
-        padding-right: 0;
-    }}
-    .contant-destintion{
-        
+
+        p {
+            padding-right: 0;
+        }
+    }
+    .contant-destintion {
         margin-left: 22%;
-        ul{
-          
+        ul {
             font-size: 1rem;
             line-height: 3;
             margin: 5rem -4rem;
-            li{
-            
+            li {
                 margin-left: 2rem;
             }
         }
-   }
+    }
 }
